@@ -8,7 +8,7 @@ const useCrud = () => {
     const [users, setUsers] = useState()
 
     const getAllUsers = () => {
-        const URL = 'http://users-crud.academlo.tech/users/'
+        const URL = 'https://users-crud.academlo.tech/users/'
         axios.get(URL)
         .then(res => setUsers(res.data)) // guardamos la  informacion
         .catch(err => console.log(err))
@@ -18,7 +18,7 @@ const useCrud = () => {
 
       
       const createNewUser = data => {
-        const URL = 'http://users-crud.academlo.tech/users/'
+        const URL = 'https://users-crud.academlo.tech/users/'
         axios.post(URL, data)
         .then(res =>  getAllUsers())
         .catch(err => console.loh(err))
@@ -27,7 +27,7 @@ const useCrud = () => {
       
       // Delete  User
       const deleteUserById =(id) => {
-        const URL =`http://users-crud.academlo.tech/users/${id}/`
+        const URL =`https://users-crud.academlo.tech/users/${id}/`
         axios.delete(URL)
         .then(res => getAllUsers())
         .catch(err => console.log(err))
@@ -36,7 +36,7 @@ const useCrud = () => {
        // update users
       
        const updateUserById = (id, data) =>{
-        const URL = `http://users-crud.academlo.tech/users/${id}/`
+        const URL = `https://users-crud.academlo.tech/users/${id}/`
         axios.put(URL, data)
         .then(res => getAllUsers())
         .catch(err => console.log(err))
