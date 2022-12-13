@@ -1,0 +1,51 @@
+
+.form-container{
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0002;
+    z-index: 1;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter:  blur(2px);
+    
+}
+.App__btn{
+    font-size: 1rem;
+    color: white;
+    padding: 0.5em 2em;
+    background-color: #555A88;
+    border-radius: 0.3em;
+   
+}
+
+.close__form{
+    transform: translateX(-100%);
+}
+
+.user-container{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.App__header{
+    margin-bottom: 80px;
+    Display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+}
+  
+.header__title{
+    font-size: 2.3rem;
+    font-weight: 800;
+    letter-spacing: .3px;
+}
