@@ -5,11 +5,13 @@
     border-radius: 0.5em;
     border: 1px solid #aaa7;
     background-color: white; 
+    transition: transform 200ms ease;
 }  
-/* .card :hover{
+.card
+:hover{
     transform: scale(1.05);
     
-} */
+}
 
 .card__title{
     margin-bottom: 0.5em;
